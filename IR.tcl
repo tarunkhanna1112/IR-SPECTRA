@@ -49,7 +49,7 @@ if { $ans1 == "y" || $ans1 == "Y" } {
 
 	close $f
 
-	exec tclsh nmode_with_visualisation_v2.tcl
+	exec tclsh nmode_with_visualisation_v2.tcl | tee log1
 
 	file delete input
 
@@ -102,7 +102,7 @@ if { $ans2 == "Y" || $ans2 == "y" } {
 
 	close $f
 
-	exec tclsh force_constants_freq.tcl
+	exec tclsh force_constants_freq.tcl | tee log2
 
 	file delete input
 
